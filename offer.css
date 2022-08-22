@@ -68,3 +68,44 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+.ribbon-wrap{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.ribbon-wrap::before,
+.ribbon-wrap::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f2467b;
+    position: absolute;
+    z-index: -1;
+}
+
+.ribbon-wrap::before{
+    top: 0;
+    right: 0;
+}
+
+.ribbon-wrap::after{
+   bottom: 0;
+   left: 0;
+}
+
+.ribbon{
+    width: 225px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 0;
+    background: #ff2166;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17%;
+    top: 29%;
+}
